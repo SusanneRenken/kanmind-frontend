@@ -3,7 +3,7 @@ const GUEST_LOGIN = {
     "password": "abcd1234"
 }
 
-const API_BASE_URL = 'https://api-coderr.susanne-renken.com//api/';
+const API_BASE_URL = 'https://api-kanmind.susanne-renken.com/api/';
 
 const LOGIN_URL = 'login/';
 
