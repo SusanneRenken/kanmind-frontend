@@ -1,5 +1,5 @@
 const GUEST_LOGIN = {
-    "email": "KanMind@Guest.com",
+    "email": "KanMind@guest.com",
     "password": "abcd1234"
 }
 
