@@ -184,23 +184,25 @@
 .color_J,
 .color_K,
 .color_L,
-.color_M,
-.color_N {
+.color_M
+{
     background-color: rgba(136, 0, 255, 1);
     color: var(--font_dark_color);
 }
 
+.color_N,
 .color_O,
 .color_P,
 .color_Q,
 .color_R,
-.color_S,
-.color_T,
-.color_U {
+.color_S
+{
     background-color: rgba(0, 111, 255, 1);
     color: white;
 }
 
+.color_T,
+.color_U,
 .color_V,
 .color_W,
 .color_X,
