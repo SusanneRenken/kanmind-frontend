@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KanMind - Dashboard</title>
+    <title>KanMind – Privacy Policy</title>
 
     <link rel="stylesheet" href="../../shared/css/variables.css" />
     <link rel="stylesheet" href="../../shared/css/standard.css" />
@@ -17,151 +17,172 @@
 
     <script>
       function checkNav() {
-        if (getAuthUserId() == null) document.querySelector("nav").remove();
+        if (getAuthUserId() == null) document.querySelector("nav")?.remove();
       }
     </script>
   </head>
 
-  <body
-    onload="
-      setHeader();
-      checkNav();
-    "
-  >
-
+  <body onload="setHeader(); checkNav();">
     <header class="main_header w_full">
-        <img onclick="redirectToDashboard()" src="../../assets/icons/logo_icon.svg" alt="" srcset=""> 
-        <div class="head_content_middle font_sec_color">
-            Frontend: Developer Akademie GmbH · Backend: eigenständig entwickelt im Rahmen des Weiterbildungsprogramms
-        </div>
-        <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
+      <img onclick="redirectToDashboard()" src="../../assets/icons/logo_icon.svg" alt="KanMind Logo">
+      <div class="head_content_middle font_sec_color">
+        Frontend: Developer Akademie GmbH · Backend: independently developed
+      </div>
+      <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
     </header>
+
     <main class="w_full d_flex_ss_gl font_white_color">
       <nav class="font_sec_color w_full">
-        <a class="link_secondary" href="../dashboard/">Dashboard</a>
-        /
+        <a class="link_secondary" href="../dashboard/">Dashboard</a> /
         <a class="link_secondary" href="./index.html">Privacy Policy</a>
       </nav>
 
       <h1 class="font_prime_color">Privacy Policy</h1>
+
       <section class="d_flex_ss_gm f_d_c">
-        <h2>General Information</h2>
+        <h2>1. General Information</h2>
         <p>
-          This privacy policy informs you about the nature, scope and purpose of
-          the processing of personal data within the web application KanMind.
-          KanMind is a non-commercial demo project created for educational and
-          portfolio purposes.
+          This Privacy Policy explains the nature, scope and purpose of the processing of personal data within the web application KanMind.
+          KanMind is a non-commercial portfolio project with public registration functionality.
         </p>
       </section>
 
       <section class="d_flex_ss_gm f_d_c">
-        <h2>Responsible Party</h2>
+        <h2>2. Responsible Party</h2>
         <p>
-          The responsible party for data processing within this application is:
-        </p>
-        <p>
-          Susanne Renken<br />
-          Birkenhain 2d<br />
-          29640 Schneverdingen<br />
-          Germany<br />
+          Susanne Renken<br>
+          Birkenhain 2d<br>
+          29640 Schneverdingen<br>
+          Germany<br>
           Email: contact@susanne-renken.com
         </p>
       </section>
 
       <section class="d_flex_ss_gm f_d_c">
-        <h2>Collected Data</h2>
-        <p>When using KanMind, the following personal data may be processed:</p>
-        <ul>
-          <li>Email address (used for authentication)</li>
-          <li>Password (stored in encrypted form)</li>
-        </ul>
-        <p>No additional personal data is collected.</p>
-      </section>
-
-      <section class="d_flex_ss_gm f_d_c">
-        <h2>Purpose of Data Processing</h2>
+        <h2>3. Hosting</h2>
         <p>
-          The collected data is used exclusively to provide the core
-          functionality of the application, including user authentication and
-          the management of boards and tasks.
+          The backend application is hosted on a VPS provided by IONOS SE, Germany.
+          The servers are located in Germany.
         </p>
-      </section>
-
-      <section class="d_flex_ss_gm f_d_c">
-        <h2>Guest Access</h2>
         <p>
-          KanMind offers a guest access option for demonstration purposes. No
-          real personal data is required or processed when using the guest
-          account.
-        </p>
-      </section>
-
-      <section class="d_flex_ss_gm f_d_c">
-        <h2>Data Storage</h2>
-        <p>
-          Personal data is stored only for as long as necessary to provide the
-          functionality of the application. There is no transfer of personal
-          data to third parties.
-        </p>
-      </section>
-
-      <section class="d_flex_ss_gm f_d_c">
-        <h2>Your Rights</h2>
-        <p>
-          You have the right to request information about the personal data
-          stored about you, as well as the right to request correction or
-          deletion of this data. Please contact the responsible party using the
-          email address provided above.
-        </p>
-      </section>
-
-      <section class="d_flex_ss_gm f_d_c">
-        <h2>Hosting</h2>
-        <p>
-          This application is hosted on servers provided by IONOS SE. When
-          accessing the application, technical access data is processed to
-          ensure the secure and stable operation of the service.
-        </p>
-      </section>
-
-      <section class="d_flex_ss_gm f_d_c">
-        <h2>Server Log Files</h2>
-        <p>
-          The hosting provider automatically collects and stores information in
-          server log files, which are transmitted by your browser. These may
-          include:
+          When accessing the application, the hosting provider automatically collects server log data including:
         </p>
         <ul>
-          <li>IP address (anonymized where possible)</li>
-          <li>Date and time of the request</li>
+          <li>IP address</li>
+          <li>Date and time of request</li>
           <li>Requested resource</li>
           <li>Browser type and version</li>
           <li>Operating system</li>
         </ul>
         <p>
-          This data is processed exclusively to ensure system security and
-          stability and is not combined with other data sources.
+          Server logs are stored for security and operational purposes.
+          Legal basis: Art. 6(1)(f) GDPR (legitimate interest in secure system operation).
         </p>
       </section>
 
       <section class="d_flex_ss_gm f_d_c">
-        <h2>SSL / TLS Encryption</h2>
+        <h2>4. Registration and Authentication</h2>
         <p>
-          For security reasons, this application uses SSL/TLS encryption. This
-          ensures that data transmitted between your browser and the server
-          cannot be read by third parties.
+          Users may register publicly within the application.
+        </p>
+        <p>
+          The following data is processed:
+        </p>
+        <ul>
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Password (stored in encrypted/hashed form)</li>
+        </ul>
+        <p>
+          Authentication is performed using token-based authentication.
+          Authentication tokens are stored in the user's browser localStorage.
+        </p>
+        <p>
+          Legal basis: Art. 6(1)(b) GDPR (performance of contract).
         </p>
       </section>
 
       <section class="d_flex_ss_gm f_d_c">
-        <h2>Data Transfer to Third Parties</h2>
+        <h2>5. Application Data</h2>
         <p>
-          No personal data is transferred to third parties. Data processing
-          takes place exclusively on the servers of the hosting provider
-          mentioned above.
+          In order to provide project management functionality, the following additional data may be processed:
+        </p>
+        <ul>
+          <li>Board titles</li>
+          <li>Task titles and descriptions</li>
+          <li>Due dates</li>
+          <li>Status information</li>
+          <li>Comments</li>
+          <li>Assigned user references</li>
+        </ul>
+        <p>
+          This data is stored in a PostgreSQL database on the same VPS.
         </p>
       </section>
+
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>6. Email Communication</h2>
+        <p>
+          The application may send system emails (e.g., registration confirmation or password reset).
+          Email services are provided via IONOS SMTP.
+        </p>
+        <p>
+          Emails may be stored for up to 30 days.
+        </p>
+      </section>
+
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>7. Logging</h2>
+        <p>
+          Backend logs may store request-related information including:
+        </p>
+        <ul>
+          <li>IP addresses</li>
+          <li>User IDs</li>
+          <li>Error logs</li>
+        </ul>
+        <p>
+          Logs are stored for security and debugging purposes.
+          Legal basis: Art. 6(1)(f) GDPR.
+        </p>
+      </section>
+
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>8. Data Retention</h2>
+        <p>
+          Personal data is stored as long as a user account exists.
+          Users may request deletion at any time.
+          No automated deletion routines are implemented.
+        </p>
+      </section>
+
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>9. Your Rights</h2>
+        <p>
+          Under the GDPR you have the right to:
+        </p>
+        <ul>
+          <li>Access your stored personal data (Art. 15 GDPR)</li>
+          <li>Rectification (Art. 16 GDPR)</li>
+          <li>Erasure (Art. 17 GDPR)</li>
+          <li>Restriction of processing (Art. 18 GDPR)</li>
+          <li>Data portability (Art. 20 GDPR)</li>
+          <li>Object to processing (Art. 21 GDPR)</li>
+        </ul>
+        <p>
+          You also have the right to lodge a complaint with the supervisory authority in Lower Saxony, Germany.
+        </p>
+      </section>
+
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>10. SSL / TLS Encryption</h2>
+        <p>
+          The application uses SSL/TLS encryption to protect transmitted data.
+        </p>
+      </section>
+
     </main>
+
     <footer class="main_footer w_full">
       <nav class="d_flex_cs_gl">
         <a href="../imprint/index.html" class="link">Imprint</a>

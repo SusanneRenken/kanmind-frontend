@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KanMind - Dashboard</title>
+    <title>KanMind - Impressum</title>
 
     <link rel="stylesheet" href="../../shared/css/variables.css" />
     <link rel="stylesheet" href="../../shared/css/standard.css" />
@@ -17,7 +17,7 @@
 
     <script>
       function checkNav() {
-        if (getAuthUserId() == null) document.querySelector("nav").remove();
+        if (getAuthUserId() == null) document.querySelector("nav")?.remove();
       }
     </script>
   </head>
@@ -28,72 +28,114 @@
       checkNav();
     "
   >
-
     <header class="main_header w_full">
-        <img onclick="redirectToDashboard()" src="../../assets/icons/logo_icon.svg" alt="" srcset=""> 
-        <div class="head_content_middle font_sec_color">
-            Frontend: Developer Akademie GmbH · Backend: eigenständig entwickelt im Rahmen des Weiterbildungsprogramms
-        </div>
-        <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
+      <img
+        onclick="redirectToDashboard()"
+        src="../../assets/icons/logo_icon.svg"
+        alt="KanMind Logo"
+      />
+      <div class="head_content_middle font_sec_color">
+        Frontend: Developer Akademie GmbH · Backend: eigenständig entwickelt
+        im Rahmen des Weiterbildungsprogramms
+      </div>
+      <div
+        id="head_content_right"
+        class="d_flex_cc_gm head_content_right"
+      ></div>
     </header>
+
     <main class="w_full d_flex_ss_gl font_white_color">
       <nav class="font_sec_color w_full">
         <a class="link_secondary" href="../dashboard/">Dashboard</a>
         /
-        <a class="link_secondary" href="./index.html">Imprint</a>
+        <a class="link_secondary" href="./index.html">Impressum</a>
       </nav>
 
-      <h1 class="font_prime_color">Imprint</h1>
+      <h1 class="font_prime_color">Impressum</h1>
 
       <section class="d_flex_ss_gm f_d_c">
-        <h2>Legal Notice</h2>
+        <h2>Angaben gemäß § 5 TMG</h2>
 
         <address>
-          <p><strong>Name:</strong> Susanne Renken</p>
+          <p><strong>Verantwortlich:</strong> Susanne Renken</p>
+
           <p>
-            <strong>Address:</strong> Birkenhain 2d, 29640 Schneverdingen,
-            Germany
+            <strong>Adresse:</strong><br />
+            Birkenhain 2d<br />
+            29640 Schneverdingen<br />
+            Deutschland
           </p>
 
-          <!-- optional -->
           <p>
-            <strong>Phone:</strong>
+            <strong>Telefon:</strong>
             <a class="link_secondary" href="tel:+491733963852">
               +49 173 396 3852
             </a>
           </p>
 
           <p>
-            <strong>Email:</strong>
+            <strong>E-Mail:</strong>
             <a class="link_secondary" href="mailto:contact@susanne-renken.com">
               contact@susanne-renken.com
             </a>
           </p>
         </address>
+      </section>
 
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
         <p>
-          <strong>Responsible for content according to § 18 Abs. 2 MStV:</strong
-          ><br />
-          Susanne Renken, address as stated above.
+          Susanne Renken<br />
+          Birkenhain 2d<br />
+          29640 Schneverdingen<br />
+          Deutschland
         </p>
       </section>
 
       <section class="d_flex_ss_gm f_d_c">
-        <h3>Project Information</h3>
-
+        <h2>Projektinformation</h2>
         <p>
-          KanMind is a non-commercial demo project created for educational and
-          portfolio purposes. It is intended solely to demonstrate technical
-          functionality and software development skills.
+          KanMind ist ein nicht-kommerzielles Demo- und Portfolio-Projekt,
+          das im Rahmen des Weiterbildungsprogramms der Developer Akademie
+          entwickelt wurde. Das Backend wurde eigenständig konzipiert und
+          umgesetzt.
         </p>
       </section>
 
       <section class="d_flex_ss_gm f_d_c">
-        <h3>Disclaimer</h3>
+        <h2>Umsatzsteuer-ID</h2>
         <p>
-          Despite careful content control, we assume no liability for the
-          content of external links. The operators of the linked pages are
-          solely responsible for their content.
+          Es besteht keine Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG.
+        </p>
+      </section>
+
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>Registereintrag</h2>
+        <p>
+          Es besteht kein Eintrag im Handels-, Vereins- oder
+          Partnerschaftsregister.
+        </p>
+      </section>
+
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>Haftung für Inhalte</h2>
+        <p>
+          Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte
+          auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+          Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht
+          verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
+          überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
+          Tätigkeit hinweisen.
+        </p>
+      </section>
+
+      <section class="d_flex_ss_gm f_d_c">
+        <h2>Haftung für Links</h2>
+        <p>
+          Dieses Projekt kann Links zu externen Websites Dritter enthalten.
+          Auf deren Inhalte habe ich keinen Einfluss. Für die Inhalte der
+          verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber
+          verantwortlich.
         </p>
       </section>
     </main>
